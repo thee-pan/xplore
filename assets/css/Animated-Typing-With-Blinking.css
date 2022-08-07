@@ -1,0 +1,104 @@
+.blinking {
+  animation: blink 1s step-start 0s infinite;
+  color: white;
+  font-size: 70px;
+}
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  font-size: 70px;
+}
+
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+
+.blc {
+  font-size: 70px;
+}
+
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+
+.cd-headline.clip span {
+  display: inline-block;
+  padding: .2em 0;
+}
+
+.cd-headline.clip .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.cd-headline.clip b {
+  opacity: 0;
+}
+
+.cd-headline b.is-visible {
+  opacity: 1;
+  font-weight: 900;
+}
+
+.is-visible, .blc {
+  color: gery;
+}
+
+.animated-text {
+  transform: scale(0.5);
+}
+
+@media (min-width: 768px) {
+  .animated-text {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 576px) {
+  .animated-text {
+    transform: scale(0.3);
+    white-space: nowrap;
+  }
+}
+
+.noSelect {
+  pointer-events: none;
+}
+
+.is-visible {
+  color: white;
+  font-size: 35px;
+}
+
+.blc {
+  color: white;
+  font-size: 30px;
+}
+
+.col-lg-12.d-lg-flex.justify-content-lg-center.align-items-lg-center {
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+
+.fa-stack {
+  color: rgb(1,6,27);
+}
+
+span:hover {
+  color: rgb(1,6,27,0.7);
+}
+
+a {
+  color: rgb(33,37,41)!important;
+}
+

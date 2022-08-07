@@ -1,0 +1,45 @@
+#footerpad {
+  padding-top: 70px;
+  padding-bottom: 20px;
+  background-color: #000000;
+}
+
+a:focus, a:hover {
+  color: #0085A1;
+}
+
+.movebg {
+	animation: moving 20s infinite;
+}
+
+@keyframes moving {
+	0% { background: rgb(62, 180, 184)}
+	10% { background: rgb(61, 189, 167)}
+	20% { background: rgb(78, 221, 178)}
+	30% { background: rgb(63, 207, 128)}
+	40% { background: rgb(71, 207, 100)}
+	50% { background: rgb(72, 221, 104)}
+	60% { background: rgb(71, 207, 100)}
+	70% { background: rgb(63, 207, 128)}
+	80% { background: rgb(78, 221, 178)}
+	90% { background: rgb(61, 189, 167)}
+	100% { background: rgb(62, 180, 184)}
+
+
+}
+
+.rotman {
+	animation:spin 20s linear infinite;
+	position: absolute;
+	z-index: 2;
+	width:42%;
+}
+
+
+@media screen and (max-width: 1081px) {
+	.rotman {
+	   width: 90%;
+	}
+ }
+
+@keyframes spin { 100% {transform:rotate(360deg); } }

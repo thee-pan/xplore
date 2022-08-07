@@ -1,0 +1,60 @@
+
+
+
+.card-deck{
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+    
+    
+
+}
+
+#profile{
+  background-image: linear-gradient(to right,#86fde8,#acb6e5);
+}
+
+.card{
+    margin-bottom: 1%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    background-image: url(https://itsalwaysgameseven.files.wordpress.com/2012/04/gradient.png);
+   
+   
+      
+}
+
+.card-img-top{
+    border-radius: 20px;
+    max-width: 50%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.card-body{
+    text-align: center;
+}
+
+.but{
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 12px;
+  width: 200px;
+  background: black;
+  text-decoration: none;
+  font-size: 20;
+  color: white;
+  padding: 2.5%;
+  text-align: center;
+}
+
+
