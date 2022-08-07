@@ -23,7 +23,7 @@
 
 
 
-    <body class="">
+    <body class>
         <!-- automatic navbar from boostrap -->
         <nav class="navbar navbar-expand-lg fixed-top clean-navbar navbar-dark"
             style="opacity: 1; background-color: black; ">
@@ -36,7 +36,7 @@
 
             <!-- Collapsible content -->
             <div class="collapse navbar-collapse tab" id="navbarSupportedContent1">
-                <ul class="nav navbar-nav ml-auto">
+                <ul class="nav navbar-nav ml-auto tabContainer">
                     <li class="nav-item active"><button class="nav-link link tablinks"
                             onclick="openEvent(event, '2022-events')">2022</button></li>
                     <li class="nav-item active"><button class="nav-link link tablinks"
@@ -47,12 +47,12 @@
             </div>
         </nav>
 
-
-        <div class="clean-block about-us page landing-page main tabcontent" id="2022-events"
+      
+        <div class="clean-block about-us page landing-page main tabcontent tabPanel" id="2022-events"
             style="background: linear-gradient(rgb(118, 174, 197) 0%, rgb(127, 183, 206) 23%, rgb(161, 197, 214) 59%, rgb(202, 223, 231) 72%, white);">
 
             <div class="block-heading">
-                <h2 class="text-body font-weight-bold" style="padding: 20px; font-size: 39px;filter: brightness(0%);">
+                <h2 class="text-body font-weight-bold" style="padding-top: 80px; font-size: 39px;filter: brightness(0%);">
                     2022</h2>
             </div>
 
@@ -166,15 +166,13 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
 
-        <div class="clean-block about-us page landing-page main tabcontent" id="2021-events"
+        <div class="clean-block about-us page landing-page main tabcontent tabPanel" id="2021-events"
             style="background: linear-gradient(rgb(118, 174, 197) 0%, rgb(127, 183, 206) 23%, rgb(161, 197, 214) 59%, rgb(202, 223, 231) 72%, white);">
 
             <div class="block-heading">
-                <h2 class="text-body font-weight-bold" style="padding: 20px; font-size: 39px;filter: brightness(0%);">
+                <h2 class="text-body font-weight-bold" style="padding-top: 80px; font-size: 39px;filter: brightness(0%);">
                     2021</h2>
             </div>
 
@@ -257,15 +255,15 @@
                     </div>
                 </div>
             </div>
-          
+
         </div>
 
-        <div class="clean-block about-us page landing-page main tabcontent" id="2020-events"
+        <div class="clean-block about-us page landing-page main tabcontent tabPanel" id="2020-events"
             style="background: linear-gradient(rgb(118, 174, 197) 0%, rgb(127, 183, 206) 23%, rgb(161, 197, 214) 59%, rgb(202, 223, 231) 72%, white); ">
 
             <div class="block-heading">
                 <h2 class="text-body font-weight-bold"
-                    style="padding-top: 20px; font-size: 39px;filter: brightness(0%);">2020
+                    style="padding-top: 80px; font-size: 39px;filter: brightness(0%);">2020
                 </h2>
             </div>
 
@@ -336,36 +334,6 @@
                     </div>
                 </div>
         </div>
-
-        </div>
-            <footer id="footerpad" style="background: rgb(0,0,0)">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-8 mx-auto">
-                            <ul class="list-inline text-center">
-                                <li class="list-inline-item"><a href="https://www.linkedin.com/company/xplorexcse"
-                                        target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i
-                                                class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li>
-                                <li class="list-inline-item"><a href="https://discord.gg/Sj4h2JR" target="_blank"><span
-                                            class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i
-                                                class="fab fa-discord fa-stack-1x fa-inverse"></i></span></a></li>
-                                <li class="list-inline-item"><a href="https://www.instagram.com/xplore_xim/" target="_blank"><span
-                                            class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i
-                                                class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></li>
-            
-                                <li class="list-inline-item"><a href="https://github.com/xplorexim" target="_blank"><span
-                                            class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i
-                                                class="fa fa-github fa-stack-1x fa-inverse"></i></span></a></li>
-                            </ul>
-                            <p class="copyright text-muted text-center">| Copyright &copy; XPLORE 2022 |<br>| Contact Us:
-                                xplore@xim.edu.in |</p>
-                        </div>
-            
-            
-                    </div>
-                </div>
-            </footer>
-
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/bs-init.js"></script>
@@ -375,6 +343,12 @@
         <script src="assets/js/added.js"></script>
         <script src="assets/js/year_events.js"></script>
         <script>
+
+            var tabButtons = document.querySelectorAll(".tabContainer .buttonContainer button");
+            var tabPanels = document.querySelectorAll(".tabContainer  .tabPanel");
+    
+
+            
             function openEvent(evt, cityName) {
                 var i, tabcontent, tablinks;
                 tabcontent = document.getElementsByClassName("tabcontent");
@@ -388,7 +362,9 @@
                 }
                 document.getElementById(cityName).style.display = "block";
                 evt.currentTarget.className += " active";
+
             }
+            openEvent(0, '2022-events');
         </script>
     </body>
 
