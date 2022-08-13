@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
     let alterClass = function () {
         let ww = document.body.clientWidth;
-        if (ww < 800) {
+        if (ww < 727) {
             $('.text-black').removeClass('d-flex');
             $('.text-black').addClass('for-shrink');
            
@@ -10,9 +10,12 @@ jQuery(document).ready(function ($) {
             
             $('.card').css('height', '550px');
   
-            $('.img-fluid-div').css('padding-left', '7%');
+            // $('.img-fluid-div').css('padding-left', '7%');
             $('.text-body-ody').css('padding-left', '7%');
             $('.shrink-remove').css('padding-bottom','7%');
+            $('.card-body-ody').css('width', 'fit-content');
+            $('.card-body-ody').css('block-size', 'fit-content');
+            // $('.img-fluid-div').css('padding-right', '10%');
 
             
 
@@ -24,7 +27,7 @@ jQuery(document).ready(function ($) {
             $('.shrink-remove').addClass('container py-2');
             $('.card').css('height', '');
             $('.card-body-ody-odyard').css('width', '');
-            $('.img-fluid-div').css('padding-left', '');
+            // $('.img-fluid-div').css('padding-left', '');
             $('.text-body-ody').css('padding-left', '');
             $('.shrink-remove').css('padding-bottom', '');
         };
